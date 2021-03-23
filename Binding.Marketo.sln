@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binding.Marketo", "Binding.Marketo\Binding.Marketo.csproj", "{CFF757D0-F016-4D4B-AF82-A07932B751E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding.Marketo.Android", "Binding.Marketo.Android\Binding.Marketo.Android.csproj", "{E8B1DD40-3239-415A-8BAE-EA0CC93049BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding.Marketo.iOS", "Binding.Marketo.iOS\Binding.Marketo.iOS.csproj", "{B4075904-13A7-4B89-A586-BB9718258BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFF757D0-F016-4D4B-AF82-A07932B751E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF757D0-F016-4D4B-AF82-A07932B751E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF757D0-F016-4D4B-AF82-A07932B751E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF757D0-F016-4D4B-AF82-A07932B751E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B1DD40-3239-415A-8BAE-EA0CC93049BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B1DD40-3239-415A-8BAE-EA0CC93049BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B1DD40-3239-415A-8BAE-EA0CC93049BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B1DD40-3239-415A-8BAE-EA0CC93049BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4075904-13A7-4B89-A586-BB9718258BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4075904-13A7-4B89-A586-BB9718258BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4075904-13A7-4B89-A586-BB9718258BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4075904-13A7-4B89-A586-BB9718258BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE80879A-FAB3-47CE-B959-B59748C06F27}
+	EndGlobalSection
+EndGlobal

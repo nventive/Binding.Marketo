@@ -1,0 +1,19 @@
+jobs:
+- deployment: Publish_Nuget
+  environment: Nuget
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+          - download: current
+            artifact: Binding.Marketo
+
+          - task: NuGetCommand@2
+            displayName: 'Publish nuget package'
+            inputs:
+              command: push
+              nuGetFeedType: external
+              packagesToPush: '$(Pipeline.Workspace)/**/*.nupkg'
+              publishFeedCredentials: 'NuGet.org - nventive'
+              verbosityPush: Normal
+

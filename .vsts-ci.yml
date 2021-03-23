@@ -1,0 +1,43 @@
+trigger:
+  branches:
+    include:
+      - master
+
+resources:
+- repo: self
+  clean: true
+  lfs: true
+
+variables:
+  IsLightBuild: $[eq(variables['Build.Reason'], 'PullRequest')]
+  PackageOutputPath: $(Build.ArtifactStagingDirectory)
+  NUGET_VERSION: 5.8.1
+  macPoolName: 'macOS-latest'
+
+stages:
+- stage: Build
+
+  jobs:
+  - job : On_Mac
+    strategy:
+      maxParallel: 1
+      matrix:
+        Xamarin.Binding.Intercom:
+          SolutionFileName: Binding.Marketo.sln
+          ApplicationPlatform: Any CPU
+          ArtifactName: Binding.Marketo
+    pool:
+      vmImage: $(macPoolName)
+      
+    workspace:
+      clean: all
+
+    steps:
+      - template: build/steps-build.yml
+
+- stage : Release
+  condition: and(succeeded(), eq(variables['IsLightBuild'], 'false'))
+  dependsOn: Build
+
+  jobs:
+  - template: build/steps-release.yml

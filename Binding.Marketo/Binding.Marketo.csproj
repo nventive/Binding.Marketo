@@ -1,0 +1,27 @@
+<Project Sdk="MSBuild.Sdk.Extras">
+	<PropertyGroup>
+		<TargetFrameworks>monoandroid10.0;xamarinios10</TargetFrameworks>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+		<OutputType>module</OutputType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>nventive.Binding.Marketo</PackageId>
+		<Title>Marketo SDK Binding</Title>
+		<Description>A Xamarin binding over the Marketo SDK</Description>
+		<Authors>nventive</Authors>
+		<Owners>nventive</Owners>
+		<PackageIcon>nugetIcon.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/nventive/Binding.Marketo</PackageProjectUrl>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'monoandroid10.0'">
+			<ProjectReference Include="../Binding.Marketo.Android/Binding.Marketo.Android.csproj" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFrameworkIdentifier)'=='Xamarin.iOS'">
+		<ProjectReference Include="../Binding.Marketo.iOS/Binding.Marketo.iOS.csproj" PrivateAssets="All" />
+	</ItemGroup>
+</Project>
