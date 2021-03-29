@@ -11,6 +11,10 @@ steps:
     verbosityRestore: Normal
     noCache: true
 
+- script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_0
+  displayName: 'Select the Xamarin SDK version'
+  enabled: true
+
 - task: MSBuild@1
   inputs:
     solution: $(SolutionFileName)
