@@ -20,6 +20,13 @@
 	<ItemGroup>
 		<None Include="nugetIcon.png" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="GitVersionTask" Version="5.5.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'monoandroid10.0'">
 			<ProjectReference Include="../Binding.Marketo.Android/Binding.Marketo.Android.csproj" PrivateAssets="All" />
