@@ -4,24 +4,33 @@
 
 ## Summary
 
-The following binding are for the **Marketo SDK**.
+The following binding are for the **Marketo SDK**. 
 
 ## Android
 
- TBA
+ Documentation for using the library inside an Android project can be found [here](https://developers.marketo.com/mobile/)
 
-### Note
+ The source SDK can be found [here](https://github.com/Marketo/android-sdk)
 
- TBA
+The bindings were generated for the version **0.8.4**
 
 ### How to use
 
- TBA
+Add a reference to the following packages
+
+- Binding.Marketo.Android.
 
 ## iOS
 
- TBA
+Documentation for using the library inside an Android project can be found [here](https://developers.marketo.com/mobile/)
+
+The source SDK can be found [here](https://github.com/Marketo/ios-sdk)
+
+The bindings were generated for the version **0.7.7**
+
 
 ### How to use
 
- TBA
+Add a reference to the following packages
+
+- Binding.Marketo.iOS
