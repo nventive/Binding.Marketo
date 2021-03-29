@@ -1,6 +1,8 @@
 jobs:
 - deployment: Publish_Nuget
   environment: Nuget
+  pool:
+    vmImage: 'macOS-latest'
   strategy:
     runOnce:
       deploy:

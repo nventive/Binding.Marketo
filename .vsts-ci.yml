@@ -22,7 +22,7 @@ stages:
     strategy:
       maxParallel: 1
       matrix:
-        Xamarin.Binding.Intercom:
+        Xamarin.Binding.Marketo:
           SolutionFileName: Binding.Marketo.sln
           ApplicationPlatform: Any CPU
           ArtifactName: Binding.Marketo
