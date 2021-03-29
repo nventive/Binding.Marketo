@@ -22,7 +22,7 @@ Add a reference to the following packages
 
 ## iOS
 
-Documentation for using the library inside an Android project can be found [here](https://developers.marketo.com/mobile/)
+Documentation for using the library inside an iOS project can be found [here](https://developers.marketo.com/mobile/)
 
 The source SDK can be found [here](https://github.com/Marketo/ios-sdk)
 
