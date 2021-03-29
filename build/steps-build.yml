@@ -2,9 +2,14 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
+  displayName: 'Restore solution packages'
   inputs:
+    command: restore
     solution: $(Build.SourcesDirectory)/$(SolutionFileName)
-    feedRestore: "36e50407-5798-43e2-b0e2-a0de0e3f46c6"
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
+    verbosityRestore: Normal
+    noCache: true
 
 - task: MSBuild@1
   inputs:
