@@ -4,7 +4,7 @@
 
 ## Summary
 
-The following binding are for the **Marketo SDK**. 
+The following binding are for the **Marketo SDK**.  
 
 ## Android
 
